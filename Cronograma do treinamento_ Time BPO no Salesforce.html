@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cronograma do treinamento: Time BPO no Salesforce</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--nav:#ffffff;--navink:#6b0030;--bg:#6b0030;--card:#ffffff;--ink:#1d1d1f;--muted:#4f4a4d;--wine:#6b0030;--chip:#f7f1e8;--mint:#8ff0cf;--yellow:#ffc61a;--red:#e8002d;--onbg:#ffffff;--lunchink:#4a0022;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--nav:#1f0b14;--navink:#f3c3d4;--bg:#3d001c;--card:#2a1a21;--ink:#f4eaee;--muted:#cbbcc3;--wine:#f3c3d4;--chip:#3a2630}}
+:root[data-theme="dark"]{--nav:#1f0b14;--navink:#f3c3d4;--bg:#3d001c;--card:#2a1a21;--ink:#f4eaee;--muted:#cbbcc3;--wine:#f3c3d4;--chip:#3a2630}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--onbg);font-family:Figtree,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;line-height:1.5}
+.nav{background:var(--nav)}
+.navin{max-width:1040px;margin:0 auto;padding:18px 24px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.logo{font-style:italic;font-weight:700;font-size:1.6rem;letter-spacing:-.03em;color:var(--navink)}
+.btn{border:1.5px solid var(--navink);color:var(--navink);border-radius:6px;padding:8px 16px;font-weight:700;font-size:.95rem;text-decoration:none}
+main{max-width:1040px;margin:0 auto;padding:44px 24px 64px}
+h1{font-size:clamp(2.2rem,6vw,3.4rem);line-height:1.08;margin:0;font-weight:500;letter-spacing:-.02em}
+.sub{margin:10px 0 30px;font-size:1.2rem;opacity:.92}
+.info{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:16px}
+.box{position:relative;background:var(--card);color:var(--ink);border-radius:20px;padding:84px 18px 20px}
+.box::before{content:"";position:absolute;top:18px;left:18px;width:56px;height:52px;border-radius:58% 42% 55% 45%;background:var(--chip)}
+.box::after{content:"";position:absolute;top:30px;left:30px;width:30px;height:24px;border-radius:7px;background:var(--mint)}
+.box:nth-child(2)::after{background:var(--yellow);border-radius:50%;width:26px;height:26px}
+.box:nth-child(3)::after{background:var(--red);width:16px;height:30px;left:35px;top:28px;border-radius:5px}
+.box b{display:block;font-size:1.05rem;margin-bottom:2px}
+.box span,.box a{color:var(--muted);overflow-wrap:anywhere}
+.box a{color:var(--wine);font-weight:700;text-underline-offset:3px}
+h2{font-size:1.9rem;font-weight:500;margin:46px 0 16px;letter-spacing:-.01em}
+.row{display:grid;grid-template-columns:150px 1fr;gap:0 20px;background:var(--card);color:var(--ink);border-radius:20px;padding:18px 22px;margin-bottom:14px}
+.time{font-weight:700;font-variant-numeric:tabular-nums;color:var(--wine)}
+.time small{display:block;font-weight:400;color:var(--muted)}
+.row h3{margin:0 0 6px;font-size:1.15rem}
+.row ul{margin:0;padding-left:1.1em;color:var(--muted)}
+.row li{margin:2px 0}
+.row.pause{background:rgba(255,255,255,.08);border:1.5px dashed rgba(255,255,255,.4);color:var(--onbg);padding:11px 22px}
+.row.pause .time,.row.pause .time small{color:var(--onbg)}
+.row.pause h3{margin:0;font-weight:500;font-size:1rem}
+.row.lunch{background:var(--mint);color:var(--lunchink);padding:20px 22px}
+.row.lunch .time,.row.lunch h3{color:var(--lunchink)}
+.row.lunch h3{margin:0;font-size:1.3rem}
+.row.lunch .time small{color:var(--lunchink)}
+@media (max-width:600px){.row{grid-template-columns:1fr}.time{margin-bottom:6px}.time small{display:inline;margin-left:8px}}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="navin"><span class="logo">iFood Benefícios</span><a class="btn" href="https://meet.google.com/cuy-eekc-axn">Entrar no Meet</a></div></nav>
+<main>
+<h1>Cronograma do treinamento</h1>
+<p class="sub">Time BPO no Salesforce</p>
+
+<div class="info">
+<div class="box"><b>Data</b><span>Segunda-feira, 5 de outubro</span></div>
+<div class="box"><b>Horário</b><span>9h30 às 17h30</span></div>
+<div class="box"><b>Local</b><span>Sala Sonho Grande, 1º andar</span></div>
+<div class="box"><b>Online</b><a href="https://meet.google.com/cuy-eekc-axn">meet.google.com/cuy-eekc-axn</a></div>
+</div>
+
+<h2>Manhã</h2>
+<section class="row"><div class="time">9h30 às 9h35<small>5 min</small></div><div><h3>Abertura</h3><ul><li>Boas-vindas, agenda do dia e objetivos</li></ul></div></section>
+
+<section class="row"><div class="time">9h35 às 11h<small>1h25</small></div><div><h3>Salesforce e integrações</h3><ul><li>Salesforce, o coração da eficiência comercial: o que é, nossa jornada e como usamos no dia a dia</li><li>Acesso com login iFood Corporativo (SSO e Authenticator)</li><li>Conexão do Gmail com o Salesforce</li><li>Conexão da Meetime com o Salesforce (botão "Ligar pela Meetime")</li><li>Conexão do WhatsApp com a Quipu, usando número corporativo</li></ul></div></section>
+
+<section class="row"><div class="time">11h às 12h<small>1h</small></div><div><h3>Objeto Lead</h3><ul><li>Visão geral: funil do lead, informações, botões de ação, cadência e tarefas</li><li>Onde consultar dados cadastrais e de contato do lead</li><li>Informações relevantes para preenchimento</li></ul></div></section>
+
+<section class="row lunch"><div class="time">12h às 13h30<small>1h30</small></div><div><h3>Almoço</h3></div></section>
+
+<h2>Tarde</h2>
+<section class="row"><div class="time">13h30 às 14h<small>30 min</small></div><div><h3>Prospecção com LinkedIn e Apollo</h3><ul><li>Áreas e cargos para prospecção: RH, Departamento Pessoal, Folha de Pagamento, Benefícios, Compras e Rewards</li></ul></div></section>
+
+<section class="row"><div class="time">14h às 14h30<small>30 min</small></div><div><h3>Cadência</h3><ul><li>O que é e como adicionar a cadência no lead</li><li>Cadências M1 e M2, do D0 ao D10</li><li>Mensagens anti no-show</li></ul></div></section>
+
+<section class="row"><div class="time">14h30 às 15h30<small>1h</small></div><div><h3>Task</h3><ul><li>Tarefa (task / FUP): como criar e acompanhar</li><li>Aba Relacionado: indicações e histórico de alterações</li><li>Aba Checklist: dados a coletar para o agendamento</li></ul></div></section>
+
+<section class="row pause"><div class="time">15h30 às 15h45<small>15 min</small></div><div><h3>Pausa</h3></div></section>
+
+<section class="row"><div class="time">15h45 às 16h30<small>45 min</small></div><div><h3>Agendamento</h3><ul><li>Agendamentos pelo Calendly: cenários e vínculo com o Salesforce</li><li>Vincular decisor: três fluxos possíveis</li><li>Converter o lead em oportunidade: campos a preencher, botão Converter e ajuste de SDR do lead e SDR BPO</li></ul></div></section>
+
+<section class="row"><div class="time">16h30 às 17h<small>30 min</small></div><div><h3>Tela de trabalho</h3><ul><li>Como funciona</li><li>Prioridades</li><li>Usabilidade no dia a dia</li></ul></div></section>
+
+<section class="row"><div class="time">17h às 17h10<small>10 min</small></div><div><h3>Glossário: reforço</h3><ul><li>FUP, OP, tarefa, compromisso e cadência</li><li>Atividades atrasadas</li><li>Etapas do funil: Lead Novo, Em tentativa de contato, Lead Qualificado, Reunião agendada, Convertido e Não convertido</li></ul></div></section>
+
+<section class="row"><div class="time">17h10 às 17h30<small>20 min</small></div><div><h3>Dúvidas e encerramento</h3></div></section>
+
+</main>
+</body>
+</html>
